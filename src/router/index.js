@@ -1,27 +1,58 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Vue from 'vue';
+import Router from 'vue-router';
 
-Vue.use(VueRouter)
+/* 包含导航栏的布局入口 */
+import ResumeLayout from '@/views/layout/resume';
 
-const routes = [
-  {
-    path: '/',
-    name: 'home',
-    component: Home
-  },
-  {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
-]
+/* 个人简历 */
+import Resume from '@/views/resume';
 
-const router = new VueRouter({
-  routes
-})
 
-export default router
+const ErrorPage404 = () => import(/* webpackChunkName: "error-page-404" */ '@/views/error-page/404.vue');
+
+export const AllRoutersMap = [{
+        path: '/',
+        component: ResumeLayout,
+        children: [{
+            path: '',
+            name: 'Resume',
+            component: Resume,
+            meta: {
+                title: '在线简历',
+                icon: 'icon-merchant',
+                requiresAuth: false,
+                notMenu: true
+            }
+        }]
+},
+    {
+        path: '/404',
+        name: '404',
+        component: ErrorPage404
+    },
+    {
+        path: '*',
+        redirect: '/404'
+    }
+];
+
+
+Vue.use(Router);
+const beforeEach = (toRoute, fromRoute, next) => {
+    if (toRoute.meta.title) {
+        document.title = toRoute.meta.title + '·ASK';
+    }
+    next();
+};
+const afterEach = (toRoute, fromRoute) => {};
+
+
+const router = new Router({
+    routes: AllRoutersMap
+
+});
+
+router.beforeEach(beforeEach);
+router.afterEach(afterEach);
+
+export default router;

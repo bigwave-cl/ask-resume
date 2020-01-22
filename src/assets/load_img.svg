@@ -1,0 +1,76 @@
+<svg viewBox="0 0 1062 1024" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <clipPath id="arrow_clip_path">
+            <rect x="230" y="110" width="560" height="660"/>
+        </clipPath>
+        <clipPath id="bottom_clip_path">
+            <rect x="170" y="800" width="684" height="130" rx="80"/>
+        </clipPath>
+    </defs>
+    <g transform="scale(.4) translate(831,712)">
+        <g clip-path="url(#arrow_clip_path)">
+            <path fill="#333333" d="M561.01733 744.473506c-5.623005 8.184556-13.228598 14.891295-22.122263 19.448812-8.092117 4.55995-17.157282 6.739579-26.185958 6.54132-0.356379 0.006082-0.709109 0.026759-1.066705 0.026759-0.558287 0-1.109276-0.026759-1.663913-0.042571-13.552136 0.465847-27.249014-4.427372-37.643607-14.690603-2.044619-1.781895-3.96639-3.700018-5.753151-5.740988L251.497825 534.933542c-19.948715-19.948715-19.948715-52.292855 0-72.241571 19.948715-19.948715 52.292855-19.948715 72.241571 0l128.032536 128.032536L451.771932 169.062353c0-33.065412 26.80506-59.870472 59.870472-59.870472 33.065412 0 59.870472 26.80506 59.870472 59.870472l0 420.433681 126.804062-126.804062c19.948715-19.948715 52.292855-19.948715 72.241571 0 19.948715 19.948715 19.948715 52.292855 0 72.241571L561.01733 744.473506z" >
+                <animateTransform 
+                    attributeName="transform" 
+                    from="0 -670" 
+                    id="a1"
+                    to="0 0"
+                    type="translate" 
+                    calcMode="linear" 
+                    begin="0s;a2.end"
+                    fill="freeze"
+                    dur="1s" />
+                <animateTransform 
+                    attributeName="transform" 
+                    from="0 0" 
+                    to="0 670"
+                    id="a2"
+                    begin="a1.end+1s"
+                    type="translate" 
+                    calcMode="linear" 
+                    fill="freeze"
+                    dur="1s" />
+                <animate 
+                    attributeName="fill" 
+                    attributeType="XML" 
+                    values="#00c853;#448aff;#ff9800;" 
+                    keyTimes="0;.5;1" 
+                    calcMode="linear" 
+                    repeatCount="indefinite" 
+                    dur="2s" />
+            </path>
+        </g>
+        <g clip-path="url(#bottom_clip_path)">
+            <path fill="#333333" d="M792.189383 928.98544 230.253739 928.98544c-34.931233 0-63.248168-28.316935-63.248168-63.248168s28.316935-63.248168 63.248168-63.248168l561.935645 0c34.931233 0 63.248168 28.316935 63.248168 63.248168S827.120617 928.98544 792.189383 928.98544z">
+                <animateTransform 
+                    attributeName="transform" 
+                    from="-684 0" 
+                    id="a1"
+                    to="0 0"
+                    type="translate" 
+                    calcMode="linear" 
+                    begin="0s;a2.end"
+                    fill="freeze"
+                    dur="1s" />
+                <animateTransform 
+                    attributeName="transform" 
+                    from="0 0" 
+                    to="684 0"
+                    id="a2"
+                    begin="a1.end+1s"
+                    type="translate" 
+                    calcMode="linear" 
+                    fill="freeze"
+                    dur="1s" />
+                <animate 
+                    attributeName="fill" 
+                    attributeType="XML" 
+                    values="#00c853;#448aff;#ff9800;" 
+                    keyTimes="0;.5;1" 
+                    calcMode="linear" 
+                    repeatCount="indefinite" 
+                    dur="2s" />
+            </path>
+        </g>
+    </g>
+</svg>
