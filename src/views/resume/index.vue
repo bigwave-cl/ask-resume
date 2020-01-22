@@ -46,7 +46,6 @@ export default {
         this.$store.dispatch('ajaxRequestStart');
     },
     mounted() {
-        InfoPanel.dialogWork();
         this.$nextTick(() => {
             this.canvasBox = new SvgBox({
                 el: this.$refs.canvasBoxRef,
