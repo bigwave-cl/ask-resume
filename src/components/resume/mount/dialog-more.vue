@@ -134,13 +134,19 @@
         @open="_dialogOpen"
         :transition="'ask-dialog-slide-more'">
         <div class="info-panel" :class="{'active': textShow }">
-            <div class="title">MORE</div>
+            <div class="title">社交</div>
             <div class="detail">
                 <ul class="d-list">
                     <li class="d-item">
                         <div class="name">GitHub:</div>
                         <div class="value">
                             <a href="https://github.com/bigwave-cl" target="_blank">个人主页</a>
+                        </div>
+                    </li>
+                    <li class="d-item">
+                        <div class="name">简书:</div>
+                        <div class="value">
+                            <a href="https://www.jianshu.com/u/fc8d28c87a36" target="_blank">个人主页</a>
                         </div>
                     </li>
                 </ul>

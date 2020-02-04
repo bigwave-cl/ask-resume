@@ -20,7 +20,7 @@
                 <h2 class="in__title">作品展示</h2>
             </div>
             <div class="rpb-info rpb-info__bottom">
-                <h2 class="in__title">More</h2>
+                <h2 class="in__title">社交</h2>
             </div>
         </div>
     </div>
