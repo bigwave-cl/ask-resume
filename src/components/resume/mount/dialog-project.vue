@@ -255,7 +255,7 @@ export default {
             list: [{
                 title: '设备监控',
                 desc: '借助D3.js绘制的监控大屏',
-                href: 'http://www.askmewhy.cn/monitor',
+                href: 'http://www.askmewhy.cn/ask-monitor',
                 cover: require('@/assets/p6.png'),
                 create: '2020年02月xx日'
             }, {
