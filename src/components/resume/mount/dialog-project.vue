@@ -253,6 +253,12 @@ export default {
             ajaxIndex: 0,
             textShow: false,
             list: [{
+                title: '设备监控',
+                desc: '借助D3.js绘制的监控大屏',
+                href: 'http://www.askmewhy.cn/monitor',
+                cover: require('@/assets/p6.png'),
+                create: '2020年02月xx日'
+            }, {
                 title: '安全递送',
                 desc: '后台配置项目，包含地图组件',
                 href: 'http://www.askmewhy.cn/soft-delivery-pro',
