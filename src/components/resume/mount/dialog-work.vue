@@ -147,9 +147,25 @@
                 <ul class="d-list">
                     <li class="d-item">
                         <div class="i__header">
+                            <div class="i__title">成都天作云科技有限公司</div>
+                            <div class="i__text">高级web前端开发工程师</div>
+                            <div class="i__text small">2020年05月-至今</div>
+                        </div>
+                        <div class="i__body">
+                            <div class="i_btext">公司简介：</div>
+                            <div class="i_btext">为乡村振兴工作开展提供数据支持和服务，其中包含数据录入、数据分析等 SaaS 软件服务和相关工具</div>
+                            <div class="i_btext">工作描述：</div>
+                            <div class="i_btext">交易端小程序重构和日常开发，为线下团队数据录入提供支持</div>
+                            <div class="i_btext">交易端后台管理系统的重构和日常开发，为运营团队提供相关服务</div>
+                            <div class="i_btext">SaaS 小程序的框架搭建和日常开发，为村民和镇级网格员提供数据录入支持</div>
+                            <div class="i_btext">SaaS 后台的框架搭建和日常开发，为管理员，运营、区域管理员、镇级管理员以及普通角色提供流程化的服务</div>
+                        </div>
+                    </li>
+                    <li class="d-item">
+                        <div class="i__header">
                             <div class="i__title">汇仁云嘉</div>
                             <div class="i__text">高级web前端开发工程师</div>
-                            <div class="i__text small">2018年12月-至今</div>
+                            <div class="i__text small">2018年12月-2020年02月</div>
                         </div>
                         <div class="i__body">
                             <div class="i_btext">公司简介：</div>

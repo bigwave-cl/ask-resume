@@ -103,7 +103,7 @@
                     </li>
                     <li class="d-item">
                         <div class="name">工作:</div>
-                        <div class="value">4年+(目前成都)</div>
+                        <div class="value">{{model.workYear}}(目前成都)</div>
                     </li>
                     <li class="d-item">
                         <div class="name">专业:</div>
@@ -131,7 +131,7 @@
                     </li>
                     <li class="d-item">
                         <div class="name">年龄:</div>
-                        <div class="value">24岁(1995年)</div>
+                        <div class="value">{{model.age}}岁(1995年)</div>
                     </li>
                 </ul>
             </div>
@@ -150,10 +150,27 @@ export default {
             show: false,
             ajaxLoader: false,
             ajaxIndex: 0,
-            textShow: false
+            textShow: false,
+            model: {
+                work: [2015, 11, 1],
+                workYear: 0,
+                birthday: [1995, 3, 9],
+                age: 0
+            }
         };
     },
+    mounted() {
+        const nowDate = new Date();
+        const workDate = new Date(...this.model.work);
+        const ageDate = new Date(...this.model.birthday);
+        this.model.workYear = (this.diffTime(workDate, nowDate) - 1) + '年+';
+        this.model.age = this.diffTime(ageDate, nowDate);
+    },
     methods: {
+        diffTime(start, end) {
+            console.log(end.getFullYear(), start.getFullYear());
+            return end.getFullYear() - start.getFullYear();
+        },
         _open() {
             this.$emit('onopen');
         },
